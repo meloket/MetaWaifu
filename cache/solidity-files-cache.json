@@ -670,8 +670,8 @@
       ]
     },
     "G:\\MetaWaifus\\MetaWaifu\\contracts\\Seductions.sol": {
-      "lastModificationDate": 1648814311602,
-      "contentHash": "9d929ca1458fbfd99be0ca16ca560ff2",
+      "lastModificationDate": 1648823120183,
+      "contentHash": "5945ddd70a943732530cfb9be7fe4a7f",
       "sourceName": "contracts/Seductions.sol",
       "solcConfig": {
         "version": "0.8.1",

@@ -1,6 +1,6 @@
 async function main() {
     const Waifus = await ethers.getContractFactory("Waifus")
-    const SDT_Contract_Addr = "0x5c117723c91c24B8A3411d4BE19B9e9c603b5051";
+    const SDT_Contract_Addr = "0xbAcE844B57E841364E8b5b089177e2408cc556a3";
   
     // Start deployment, returning a promise that resolves to a contract object
     const myContract = await Waifus.deploy(SDT_Contract_Addr)
