@@ -553,8 +553,8 @@
       ]
     },
     "G:\\MetaWaifus\\MetaWaifu\\contracts\\Waifus.sol": {
-      "lastModificationDate": 1648814311602,
-      "contentHash": "f4cc40c6c381705926de7aa1ec666f89",
+      "lastModificationDate": 1648820170533,
+      "contentHash": "e0d9bd2796f63bd9081cd1d3ca473004",
       "sourceName": "contracts/Waifus.sol",
       "solcConfig": {
         "version": "0.8.1",

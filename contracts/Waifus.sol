@@ -65,12 +65,15 @@ contract Waifus is ERC721URIStorage, Ownable, ReentrancyGuard {
     function sale(
         uint256 tokenId,
         uint256[] memory sdtIds
-    ) external payable nonReentrant {
+    ) external nonReentrant {
         require(saleActive, "Sale is not active.");
         require(ownerOf(tokenId) == owner(), "Invalid token for sale.");
         uint256 trait = chickTraitofTokenId[tokenId];
         for(uint256 i=0; i<3; i++) {
             require(_seductions.getChickTraitofTokenId(sdtIds[i]) == trait && _seductions.ownerOf(sdtIds[i]) == _msgSender(), "Not eligible for MetaMarriage with this Chick");
+        }
+        for(uint256 i=0; i<3; i++){
+            _seductions.burn(sdtIds[i]);
         }
         safeTransferFrom(owner(), _msgSender(), tokenId);
     }
