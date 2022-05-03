@@ -93,6 +93,5 @@ contract Waifus is ERC721URIStorage, Ownable, ReentrancyGuard {
     )override internal virtual {
         require((saleActive && from == owner()) || !saleActive, "Invalid Transfer Call!");
         require(ownerOf(tokenId) == from, "ERC721: transfer from incorrect owner");
-        require(to != address(0), "ERC721: transfer to the zero address");
     }
 }
